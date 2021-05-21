@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerTroopsSpawner : MonoBehaviour
+public class EnemyTroopsSpawner : MonoBehaviour
 {
     public GameObject tube;
     public float height;

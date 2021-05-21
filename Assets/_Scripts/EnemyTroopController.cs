@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using helper;
 using UnityEngine;
 
-public class TroopController : MonoBehaviour, IDamageable
+public class EnemyTroopController : MonoBehaviour, IDamageable
 {
     public int speed;
     public Animator animator;
@@ -42,7 +42,7 @@ public class TroopController : MonoBehaviour, IDamageable
             //lineDrawer.DrawLineInGameView(castPoint.position, hit.point, Color.yellow);
             Debug.Log("Did Hit");
             walking = false;
-            if (hit.collider.gameObject.CompareTag("EnemyTroops"))
+            if (hit.collider.gameObject.CompareTag("PlayerTroops"))
             {
                 enemyObject = hit.collider.gameObject;
                 Debug.Log("Attacaca");
