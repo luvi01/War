@@ -1,28 +1,25 @@
 # Age of War 2
-Repositório para entrega do jogo First Person Explorer de Jogos Digitais 2021.1
+Repositório para entrega do jogo RTS de Jogos Digitais 2021.1
 
 ## Identidade do jogo (Conceito)
 
-Lumber, um lenhador e pescador, deve coletar madeiras específicas para conseguir fazer fogo e sobreviver às condições adversas da ilha desconhecida onde foi parar ao passar por uma tempestade enquanto ia pescar.
+Duas tribos, em GUERRA infinita atraves de eras. Aos vencedores as batatas!
 
 ## Descrição da mecânica (Core Mechanics / System design)
 
-É um jogo no estilo First Person Explorer. O objetivo é coletar 20 troncos de árvores coníferas, controlando um lenhador, que pode usar um machado e se deslocar com seu barco de pesca. Se o sol se por o jogo termina. Sempre que o personagem marreta 5 vezes uma árvore conífera, ela cai, é coletada e o jogador ganha um ponto. É necessário acumular 20 troncos de árvore para conseguir fazer um fogo duradouro o suficiente para se aquecer e assar sua comida. Durante o jogo, além de se locomover, o jogador tem a opção de dirigir seu barco, podendo se locomover entre as ilhas mais rápido e coletar as madeiras necessárias o quanto antes.
+É um jogo no estilo Real Time Strategy. O objetivo é coletar moedas para spawnar cada vez mais tropas e avançar pelas eras, para matar a tribo inimiga.
 
 ## Características (Mundo do jogo)
 
-O jogo se passa em um arquipélago desconhecido, onde Lumber precisa sobreviver durante a noite para planejar a volta ao seu lar. O mundo é para ser explorado e instigar a curiosidade do player. Nele há três tipos de árvores: coníferas (altas e finas, boas para fazer fogueiras), broadleafs (mais robustas, dão frutos e proteger do sol) e palmeiras (coqueiros sob a areia). Ainda é possível navegar pelas águas em torno da ilha e pilotar um barco. A ideia é expor o jogador a um ambiente completo com múltiplos estímulos, que o fará mudara maneira de jogar a cada vez.
+O jogo se passa na arena de combate entre as duas tribos.
 
 ## Arte
 
-O jogo é no formato 3D, com uma arte animada e colorida (água, planta, árvores, sol). Uma estética amigável e bem leve. A ideia é torná-la a mais simples e menos vulgar possível para que os jogadores se sintam instigados a explorar o mapa.
+O jogo é no formato 2D, com uma arte animada e colorida. Uma estética amigável e bem leve. A ideia é torná-la a mais simples e menos vulgar possível para que os jogadores se sintam verdadeiros estrategistas.
 
 ## Música/Trilha Sonora
 
-* INTRO: [Clone Wars Intro] (https://youtu.be/i5chHfK6sCc)
-* IN GAME: [Skyrim - Around the Fire](https://youtu.be/xHO3rIeVugs)
-* ENDGAME (VITÓRIA): [Creedence Clearwater Revival - Fortunate Son](https://youtu.be/ZWijx_AgPiA)
-* ENDGAME (DERROTA): [Civilization VI](https://youtu.be/PM8GPN0jPPA)
+
 
 ## Interface
 
