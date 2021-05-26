@@ -109,13 +109,17 @@ public class EnemyTroopController : MonoBehaviour, IDamageable
 
     void giveDamage()
     {
-        IDamageable damageable = enemyObject.gameObject.GetComponent(typeof(IDamageable)) as IDamageable;
-        if (!(damageable is null))
+        if(!(enemyObject == null))
         {
-            Debug.Log("Dei damage!");
+            IDamageable damageable = enemyObject.gameObject.GetComponent(typeof(IDamageable)) as IDamageable;
+            if (!(damageable is null))
+            {
+                Debug.Log("Dei damage!");
 
-            damageable.TakeDamage(damage);
+                damageable.TakeDamage(damage);
+            }
         }
+        
     }
 
     void newVoid()
