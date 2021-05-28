@@ -38,8 +38,8 @@ public class EnemyTroopController : MonoBehaviour, IDamageable
         RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPos, layerMask);
         if (hit.collider != null)
         {
-            //Debug.DrawLine(castPoint.position, hit.point, Color.yellow);
-            //lineDrawer.DrawLineInGameView(castPoint.position, hit.point, Color.yellow);
+            // Debug.DrawLine(castPoint.position, hit.point, Color.yellow);
+            // lineDrawer.DrawLineInGameView(castPoint.position, hit.point, Color.yellow);
             Debug.Log("Did Hit");
             walking = false;
             if (hit.collider.gameObject.CompareTag("PlayerTroops"))
@@ -51,8 +51,8 @@ public class EnemyTroopController : MonoBehaviour, IDamageable
         }
         else
         {
-            //Debug.DrawLine(castPoint.position, endPos, Color.red);
-            //lineDrawer.DrawLineInGameView(castPoint.position, endPos, Color.red);
+            // Debug.DrawLine(castPoint.position, endPos, Color.red);
+            // lineDrawer.DrawLineInGameView(castPoint.position, endPos, Color.red);
             walking = true;
             attack = false;
 
