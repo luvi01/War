@@ -19,6 +19,9 @@ MonoBehaviour:
   life: 10
   enemyObject: {fileID: 0}
   damage: 1
+  shootDelay: 2.5
+  money: 10
+  cost: 0
 --- !u!1001 &3257341562753647227
 PrefabInstance:
   m_ObjectHideFlags: 0

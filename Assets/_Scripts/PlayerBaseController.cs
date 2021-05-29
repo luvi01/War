@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BlockTest : MonoBehaviour, IDamageable
+public class PlayerBaseController : MonoBehaviour, IDamageable
 {
     public int life = 5;
+
+    public GameManager gm;
 
     public void Die()
     {
@@ -13,14 +15,15 @@ public class BlockTest : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damage)
     {
-        Debug.Log("aAAAAAAAAAA");
         life -= damage;
+        gm.playerBaseHealth = life;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        gm = GameManager.GetInstance();
+        gm.playerBaseHealth = life;
     }
 
     // Update is called once per frame

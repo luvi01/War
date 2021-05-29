@@ -15,12 +15,17 @@ public class TroopController : MonoBehaviour, IDamageable
     public int life = 10;
     public GameObject enemyObject;
     public int damage = 1;
-
+    private float _lastShootTimestamp = 0.0f;
+    public float shootDelay = 2.5f;
+    GameManager gm;
+    public int money;
+    public int cost;
 
     // Start is called before the first frame update
     void Start()
     {
         lineDrawer = new LineDrawer();
+        gm = GameManager.GetInstance();
     }
 
     void FixedUpdate()
@@ -60,14 +65,23 @@ public class TroopController : MonoBehaviour, IDamageable
         }
     }
 
+    public void Shoot()
+    {
+        if (Time.time - _lastShootTimestamp < shootDelay) return;
+        //AudioManager.PlaySFX(shootSFX);
+
+        _lastShootTimestamp = Time.time;
+
+        giveDamage();
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (attack)
         {
-
             animator.SetFloat("Attack", 1.0f);
-            Invoke("giveDamage", 3f);
+            Shoot();
         }
 
         if (!attack)
@@ -89,6 +103,7 @@ public class TroopController : MonoBehaviour, IDamageable
         if (life <= 0)
         {
             Die();
+            animator.SetFloat("Death", 1.0f);
         }
 
     }
@@ -101,10 +116,10 @@ public class TroopController : MonoBehaviour, IDamageable
     public void Die()
     {
         Debug.Log("MORRI");
-        animator.SetFloat("Death", 1.0f);
         walking = false;
         attack = false;
-        Invoke("newVoid", 3f);
+        gm.enemyMoney += money;
+        Destroy(gameObject);
     }
 
     void giveDamage()
