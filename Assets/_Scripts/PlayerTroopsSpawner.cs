@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerTroopsSpawner : MonoBehaviour
 {
-    public GameObject tube;
+    public GameObject infantary;
+    public GameObject tank;
+
     public float height;
     public float maxTimer = 1;
     public float timer = 1;
@@ -68,11 +70,21 @@ public class PlayerTroopsSpawner : MonoBehaviour
 
         if (gm.playerInfantarySpawState)
         {
-            GameObject newTube = Instantiate(tube);
-            newTube.transform.position = transform.position + new Vector3(0, 0, 1);
+            GameObject newInfantary = Instantiate(infantary);
+            newInfantary.transform.position = transform.position + new Vector3(0, 0, 1);
             timer = 0;
             gm.playerInfantarySpawState = false;
         }
+
+        if (gm.playerTankSpawState)
+        {
+            GameObject newTank = Instantiate(tank);
+            newTank.transform.position = transform.position + new Vector3(0, 0, 1);
+            timer = 0;
+            gm.playerTankSpawState = false;
+        }
+
+        
         //timer += Time.deltaTime;
     }
 }

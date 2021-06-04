@@ -23,6 +23,8 @@ public class GameManager
     private Dictionary<string, Player> playerDict;
     private static GameManager _instance;
     public bool playerInfantarySpawState = false;
+    public bool playerTankSpawState = false;
+
 
 
     public static GameManager GetInstance()

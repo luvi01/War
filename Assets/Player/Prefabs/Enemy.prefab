@@ -16,7 +16,7 @@ MonoBehaviour:
   animator: {fileID: 3197600073145416057}
   castDist: -1
   castPoint: {fileID: 5249475865457287013}
-  life: 10
+  life: 3
   enemyObject: {fileID: 0}
   damage: 1
   shootDelay: 2.5
