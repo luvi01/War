@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class UI_Era : MonoBehaviour
 {
@@ -17,18 +18,20 @@ public class UI_Era : MonoBehaviour
     void Update()
     {
 
+
     }
 
-    public void SpawnTank()
+    public void ChangeScene()
     {
-        if (Time.time - _lastShootTimestamp < shootDelay) return;
+        SceneManager.LoadScene(1);
+        //if (Time.time - _lastShootTimestamp < shootDelay) return;
         //AudioManager.PlaySFX(shootSFX);
 
-        if (gm.playerMoney < 20) return;
+        //if (gm.playerMoney < 20) return;
 
-        gm.playerMoney -= 20;
-        _lastShootTimestamp = Time.time;
+        //gm.playerMoney -= 20;
+        //_lastShootTimestamp = Time.time;
 
-        gm.playerTankSpawState = true;
+        //gm.playerTankSpawState = true;
     }
 }

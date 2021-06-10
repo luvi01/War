@@ -16,19 +16,20 @@ public class CameraControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
+            if (transform.position.x > 5.98)
+            {
+                return;
+            }
             transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            if (transform.position.x < -8.10)
+            {
+                return;
+            }
             transform.Translate(new Vector3(-speed * Time.deltaTime, 0, 0));
         }
-        if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(new Vector3(0, -speed * Time.deltaTime, 0));
-        }
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
-        }
+
     }
 }

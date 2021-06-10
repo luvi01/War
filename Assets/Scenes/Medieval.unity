@@ -1273,7 +1273,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c7d89348eb184148af240d013c803e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tube: {fileID: 1694744877632048, guid: 8b8d80b86c878f8459ec86caf3067683, type: 3}
+  infantary: {fileID: 1694744877632048, guid: 8b8d80b86c878f8459ec86caf3067683, type: 3}
+  tank: {fileID: 0}
   height: 0
   maxTimer: 1
   timer: 1

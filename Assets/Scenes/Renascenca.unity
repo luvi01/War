@@ -664,7 +664,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 380488776}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 5.98, y: 0.65, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -3764,7 +3764,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1938485417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b065419e8de4d9fb5836ba847e20eb, type: 3}
+  m_Script: {fileID: 11500000, guid: c3b1094b752c94ec984e5ffefc6e6a67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootDelay: 2.5
@@ -3812,7 +3812,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1938485419}
-        m_MethodName: SpawnTank
+        m_MethodName: ChangeScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
