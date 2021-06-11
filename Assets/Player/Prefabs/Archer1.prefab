@@ -41,9 +41,9 @@ GameObject:
   - component: {fileID: 716024519756654891}
   - component: {fileID: 716024519756654892}
   - component: {fileID: 716024519756654893}
-  - component: {fileID: 716024519756654894}
   - component: {fileID: 716024519756654895}
   - component: {fileID: 716024519756654864}
+  - component: {fileID: 711732807948039622}
   m_Layer: 10
   m_Name: Archer1
   m_TagString: PlayerTroops
@@ -136,28 +136,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &716024519756654894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 716024519756654865}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662ca589a816e447bb18b02d97e4a495, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: -1
-  animator: {fileID: 716024519756654893}
-  castDist: 0
-  castPoint: {fileID: 716024518659358044}
-  life: 5
-  enemyObject: {fileID: 0}
-  damage: 2
-  shootDelay: 2.5
-  money: 0
-  cost: 0
 --- !u!50 &716024519756654895
 Rigidbody2D:
   serializedVersion: 4
@@ -195,6 +173,29 @@ CapsuleCollider2D:
   m_Offset: {x: 0.5680561, y: -0.39373684}
   m_Size: {x: 4.1218367, y: 5.1429024}
   m_Direction: 0
+--- !u!114 &711732807948039622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716024519756654865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4ca3b80c63a4fdd92a5e835d902c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: -1
+  animator: {fileID: 716024519756654893}
+  castDist: 5
+  friendDist: 1
+  castPoint: {fileID: 716024518659358044}
+  life: 10
+  enemyObject: {fileID: 0}
+  damage: 1
+  shootDelay: 2.5
+  money: 10
+  cost: 10
 --- !u!1 &716024520538572677
 GameObject:
   m_ObjectHideFlags: 0
