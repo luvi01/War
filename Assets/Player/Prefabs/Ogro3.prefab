@@ -627,9 +627,9 @@ MonoBehaviour:
   life: 5
   enemyObject: {fileID: 0}
   damage: 1
-  shootDelay: 2.5
-  money: 10
-  cost: 10
+  shootDelay: 1.5
+  money: 30
+  cost: 30
 --- !u!50 &1865728965523556411
 Rigidbody2D:
   serializedVersion: 4

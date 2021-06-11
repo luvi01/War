@@ -190,12 +190,12 @@ MonoBehaviour:
   castDist: 5
   friendDist: 1
   castPoint: {fileID: 716024518659358044}
-  life: 10
+  life: 5
   enemyObject: {fileID: 0}
-  damage: 1
+  damage: 3
   shootDelay: 2.5
-  money: 10
-  cost: 10
+  money: 70
+  cost: 70
 --- !u!1 &716024520538572677
 GameObject:
   m_ObjectHideFlags: 0

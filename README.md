@@ -3,15 +3,15 @@ Repositório para entrega do jogo RTS de Jogos Digitais 2021.1
 
 ## Identidade do jogo (Conceito)
 
-Duas tribos, em GUERRA infinita atraves de eras. Aos vencedores as batatas!
+Duas tribos, em GUERRA infinita atraves de eras. Aos vencedores, as batatas!
 
 ## Descrição da mecânica (Core Mechanics / System design)
 
-É um jogo no estilo Real Time Strategy. O objetivo é coletar moedas para spawnar cada vez mais tropas e avançar pelas eras, para matar a tribo inimiga.
+É um jogo no estilo Real Time Strategy. O objetivo é coletar moedas para spawnar cada vez mais tropas e conseguir derrotar a tribo inimiga, avançando pelas eras.
 
 ## Características (Mundo do jogo)
 
-O jogo se passa na arena de combate entre as duas tribos.
+O jogo se passa em 3 arenas de combate, contra a tribo da Folha, do Gelo e da Pedra.
 
 ## Arte
 
@@ -19,40 +19,38 @@ O jogo é no formato 2D, com uma arte animada e colorida. Uma estética amigáve
 
 ## Música/Trilha Sonora
 
-
+* Menu e Créditos: Theme do [Medieval 2 Total War](https://youtu.be/NRp8WeT0SZI)
+* Jogo: Theme clássica do [Age of War](https://youtu.be/qY9gK2Gqwik)
 
 ## Interface
 
-A interface adotada é a mais simples e intuitiva possível. Inicialmente, há uma cutscene que explica o contexto e prepara a narrativa do jogo. Em seguida, ao clicar em "INICIAR", o jogador começa em seu barco. Depois, ele pode controlá-lo, até decidir descer em alguma ilha do arquipélago. Enquanto joga, na tela aparecerá o countdown de quanto tempo falta para o sol se por, além da quantidade de madeiras já coletadas pelo jogador. Quando acabar, há tanto uma cutscene para a vitória, quanto uma para a derrota, que completam e finalizam a narrativa do jogo.
+A interface adotada é a mais simples e intuitiva possível. Inicialmente, há um menu com três opções de botão. O primeiro deles "PLAY", dá início ao jogo no combate contra a primeira tribo da Folha. Em seguida, ao derrotar a primeira tribo, ele avança para a segunda (Gelo) e caso a derrote, avança para a mais difícil que é a da Pedra. A outra opção de botão é um menu de opções que permite controle de volume. A última opção, por fim, é um manual de como jogar o jogo com seus controles.
 
 ## Controles
 
-* PLAYER: Suas teclas de comando são WASD (para se locomover). SHIFT (enquanto pressiona alguma das teclas mencionadas anteriormente) para correr rápido. SPACE para pular. Tecla 3 para ativar/desativar o machado. Botão esquerdo do mouse (enquanto o machado estiver ativado) para dar o golpe. Tecla 1 caso queira alternar para o modo BARCO. Movimento do mouse controla a visão.
-* BARCO: Suas teclas de comando são WASD (para direcionar o leme). Tecla 2 caso queira alternar para o modo Player (First Person Explorer).
+As teclas de comando do jogador são AD ou seta dir e esq (para controlar a câmera). Além do botão esquerdo do mouse para selecionar qual tropa deseja treinar.
 
 ## Dificuldade
 
-A dificuldade do jogo é única e exclusivamente tempo. Porém, o objetivo de 20 árvores cortadas é extremamente razoável para os 6 minutos dados para o sol se por. O jogo foi feito para ser explorado e desbravar o ambiente. 
+A dificuldade do jogo é controlar suas economias para treinar tropas suficientes que derrotem as tribos inimigas. A estratégia é combinar os diferentes atributos das tropas para criar um exército forte e completo que consiga avançar entre as dificuldades de cada tribo. 
 
 ## Fluxo do jogo
 
-Cutscene Ínicio ==> Tela de Menu ==> Tela do Jogo ==> Cutscene Final ==> Tela de Menu
+Tela de Menu Inicial ==> Tela do Jogo ==> Tela de Créditos ==> Tela de Menu Inicial
 
 ## Personagens
 
-Lumber, um lenhador que gosta de pescar. Sabe se virar, consegue caçar, colher frutos e ainda fazer fogueira. Mas para isso, precisa de matéria prima. Lenhador por natureza, pescador por opção, Lumber se ve na obrigação de se aquecer e assar seu peixe para planejar com calma sua volta pra casa.
+Existem 5 personagens diferentes e suas variações de acordo com a era da batalha:
+* Goblin: é a tropa mais comum do jogo, é barata, mas também não aguenta dar e muito menos receber tanto dano. 
+* Reaper: são os assassinos do jogo, dão muito dano em pouco tempo, mas não tancam quase nada.
+* Tanque: são os minotauros que fazem front line do exército, aguentam muito dano, mas devolvem muito pouco.
+* Arqueiro: são os Attack Damage Carrier do time, conseguem bater de longe e dar muito dano. Uma boa combinação com o tanque cria exércitos imbatíveis.
+* Golem inimigo: inimigo frustrado com o desafio que não quer perder seu terreno para tropas invasoras (nós no caso rs). 
 
 ## Definições gerais
 
-* Gênero: First Person Explorer / Aventura / Cenário Iterativo;
+* Gênero: Real Time Strategy;
 
-* Plataformas: Unity 3D;
+* Plataformas: Unity 2D;
 
 * Público alvo: Jogadores curiosos e apaixonados por uma boa narrativa.
-
-## Referências
-
-* Barco e Mar baseados no modelo open source da [Hibby Games](https://youtu.be/s_RIfCfMlPc)
-* Mecânica de corte inspirada no modelo da survival island montada por [Funnyguy77](https://www.youtube.com/channel/UCt14Ssh96qEknKNjUsdutDQ)
-* Day and Night cycle inspirado no canal do [Probably Spoonie](https://www.youtube.com/user/618Lonewolf/featured)
-* Cutscene inspirado no tutorial do [How to Do](https://www.youtube.com/channel/UCCHLW0sg4HBjMU4yscSsbqQ)

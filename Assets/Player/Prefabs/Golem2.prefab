@@ -220,12 +220,12 @@ MonoBehaviour:
   animator: {fileID: 69667896176978771}
   castDist: 1
   castPoint: {fileID: 9095863303017663313}
-  life: 7
+  life: 8
   enemyObject: {fileID: 0}
   damage: 3
-  shootDelay: 2.5
-  money: 10
-  cost: 10
+  shootDelay: 1.5
+  money: 50
+  cost: 50
 --- !u!50 &7848639863015517978
 Rigidbody2D:
   serializedVersion: 4

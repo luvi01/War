@@ -994,12 +994,12 @@ MonoBehaviour:
   animator: {fileID: 7972766180465686208}
   castDist: 1
   castPoint: {fileID: 1320951575765781830}
-  life: 5
+  life: 20
   enemyObject: {fileID: 0}
-  damage: 2
+  damage: 1
   shootDelay: 2.5
-  money: 20
-  cost: 20
+  money: 60
+  cost: 60
 --- !u!70 &4322279919893194242
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

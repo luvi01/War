@@ -270,10 +270,10 @@ MonoBehaviour:
   castPoint: {fileID: 1097081607503894146}
   life: 5
   enemyObject: {fileID: 0}
-  damage: 1
-  shootDelay: 2.5
-  money: 10
-  cost: 10
+  damage: 8
+  shootDelay: 1.5
+  money: 60
+  cost: 60
 --- !u!50 &7241821059194626834
 Rigidbody2D:
   serializedVersion: 4

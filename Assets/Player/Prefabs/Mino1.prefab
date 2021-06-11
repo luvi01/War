@@ -579,12 +579,12 @@ MonoBehaviour:
   animator: {fileID: 5964752380811860087}
   castDist: 1
   castPoint: {fileID: 1687908492998688719}
-  life: 5
+  life: 10
   enemyObject: {fileID: 0}
-  damage: 2
+  damage: 1
   shootDelay: 2.5
-  money: 20
-  cost: 20
+  money: 30
+  cost: 30
 --- !u!1 &3984243590591648941
 GameObject:
   m_ObjectHideFlags: 0

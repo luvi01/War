@@ -42,11 +42,11 @@ public class GameManager
     private GameManager()
     {
         vidas = 1;
-        playerMoney = 1000;
-        enemyMoney = 100;
+        playerMoney = 50;
+        enemyMoney = 1000;
 
-        playerBaseHealth = 0;
-        enemyBaseHealth = 0;
+        playerBaseHealth = 10;
+        enemyBaseHealth = 10;
 
         gameState = GameState.MENU;
         playerDict = new Dictionary<string, Player>();
