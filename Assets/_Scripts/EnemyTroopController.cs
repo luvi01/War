@@ -82,8 +82,8 @@ public class EnemyTroopController : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        if (gm.gameState != GameManager.GameState.GAME &
-            gm.gameState != GameManager.GameState.RESUME) return;
+        // if (gm.gameState != GameManager.GameState.GAME &
+        //     gm.gameState != GameManager.GameState.RESUME) return;
 
         if (attack)
         {

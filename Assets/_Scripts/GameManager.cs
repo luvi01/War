@@ -24,6 +24,8 @@ public class GameManager
     private static GameManager _instance;
     public bool playerInfantarySpawState = false;
     public bool playerTankSpawState = false;
+    public bool playerReaperSpawState = false;
+    public bool playerArcherSpawState = false;
 
 
 

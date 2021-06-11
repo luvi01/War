@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 4d58e3b440fb4e0458335ee00db10519
+  - enabled: 1
+    path: Assets/Scenes/Folha.unity
+    guid: 078320362542e9e4aa285b32742deca6
+  - enabled: 1
+    path: Assets/Scenes/Gelo.unity
+    guid: 5287d090dff2c43bd9a6b6deda04426d
+  - enabled: 1
+    path: Assets/Scenes/Pedra.unity
+    guid: c882190ac5ed6af47937e7dd7cd8a58d
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 66cbd5370c4d67447bc8d00df553f74d
   m_configObjects: {}

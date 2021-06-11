@@ -14,6 +14,7 @@ public class EnemyTroopsSpawner : MonoBehaviour
     public int castDist;
     public Transform castPoint;
     public bool spawn = true;
+    public int level = 5;
 
 
     void FixedUpdate()
@@ -62,16 +63,17 @@ public class EnemyTroopsSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gm.gameState != GameManager.GameState.GAME &
-             gm.gameState != GameManager.GameState.RESUME) return;
+        // if (gm.gameState != GameManager.GameState.GAME &
+        //      gm.gameState != GameManager.GameState.RESUME) return;
 
         SpawnInfantary();
-        if (state)
+        if (state && level>0)
         {
             GameObject newTube = Instantiate(tube);
             newTube.transform.position = transform.position + new Vector3(0, 0, 1);
             timer = 0;
             state = false;
+            level -= 1;
         }
         //timer += Time.deltaTime;
     }
