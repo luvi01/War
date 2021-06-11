@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyBaseController : MonoBehaviour, IDamageable
 {
-    public int life = 5;
+    public int life = 10;
 
     public GameManager gm;
 

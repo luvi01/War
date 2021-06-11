@@ -5,6 +5,8 @@ public class PlayerTroopsSpawner : MonoBehaviour
 {
     public GameObject infantary;
     public GameObject tank;
+    public GameObject reaper;
+    public GameObject archer;
 
     public float height;
     public float maxTimer = 1;
@@ -82,6 +84,22 @@ public class PlayerTroopsSpawner : MonoBehaviour
             newTank.transform.position = transform.position + new Vector3(0, 0, 1);
             timer = 0;
             gm.playerTankSpawState = false;
+        }
+
+        if (gm.playerReaperSpawState)
+        {
+            GameObject newReaper = Instantiate(reaper);
+            newReaper.transform.position = transform.position + new Vector3(0, 0, 1);
+            timer = 0;
+            gm.playerReaperSpawState = false;
+        }
+
+        if (gm.playerArcherSpawState)
+        {
+            GameObject newArcher = Instantiate(archer);
+            newArcher.transform.position = transform.position + new Vector3(0, 0, 1);
+            timer = 0;
+            gm.playerArcherSpawState = false;
         }
 
         

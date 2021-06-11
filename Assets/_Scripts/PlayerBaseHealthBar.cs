@@ -6,7 +6,7 @@ public class PlayerBaseHealthBar : MonoBehaviour
     public GameManager gm;
 
     // Health Bar
-    public int maxHealth = 5;
+    public int maxHealth = 10;
     public int currentHealth;
     public HealthBar healthBar;
 

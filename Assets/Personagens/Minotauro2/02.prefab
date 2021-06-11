@@ -765,7 +765,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8363183808743393495}
   - component: {fileID: 6235296112408207428}
-  - component: {fileID: 3885655703265043270}
+  - component: {fileID: 6941545151948897938}
+  - component: {fileID: 8117110597106942362}
+  - component: {fileID: 536506997039604585}
   m_Layer: 0
   m_Name: 02
   m_TagString: Untagged
@@ -811,7 +813,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3885655703265043270
+--- !u!114 &6941545151948897938
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -820,16 +822,56 @@ MonoBehaviour:
   m_GameObject: {fileID: 6929233131096232498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79f852089c1f94c41b577fcf3ba506ee, type: 3}
+  m_Script: {fileID: 11500000, guid: 662ca589a816e447bb18b02d97e4a495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: -1
   animator: {fileID: 6235296112408207428}
   castDist: 1
   castPoint: {fileID: 1005774266233951758}
-  life: 10
+  life: 5
   enemyObject: {fileID: 0}
-  damage: 1
+  damage: 2
+  shootDelay: 2.5
+  money: 20
+  cost: 20
+--- !u!50 &8117110597106942362
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929233131096232498}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!70 &536506997039604585
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929233131096232498}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.10077977, y: 2.1067183}
+  m_Size: {x: 3.1569123, y: 4.1509185}
+  m_Direction: 0
 --- !u!1 &7454465917826363280
 GameObject:
   m_ObjectHideFlags: 0
