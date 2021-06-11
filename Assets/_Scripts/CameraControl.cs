@@ -14,7 +14,23 @@ public class CameraControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Mouse X")>0)
+        // if (Input.GetAxis("Mouse X")>0)
+        // {
+        //     if (transform.position.x > 5.28)
+        //     {
+        //         transform.Translate(new Vector3(-speed * Time.deltaTime, 0, 0));
+        //     }
+        //     transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
+        // }
+        // if (Input.GetAxis("Mouse X")<0)
+        // {
+        //     if (transform.position.x < -7.3)
+        //     {
+        //         transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
+        //     }
+        //     transform.Translate(new Vector3(-speed * Time.deltaTime, 0, 0));
+        // }
+        if (Input.GetKey(KeyCode.RightArrow))
         {
             if (transform.position.x > 5.28)
             {
@@ -22,7 +38,7 @@ public class CameraControl : MonoBehaviour
             }
             transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
         }
-        if (Input.GetAxis("Mouse X")<0)
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             if (transform.position.x < -7.3)
             {
@@ -30,13 +46,5 @@ public class CameraControl : MonoBehaviour
             }
             transform.Translate(new Vector3(-speed * Time.deltaTime, 0, 0));
         }
-        // if (Input.GetAxis("Mouse Y")<0)
-        // {
-        //     transform.Translate(new Vector3(0, -speed * Time.deltaTime, 0));
-        // }
-        // if (Input.GetAxis("Mouse Y")>0)
-        // {
-        //     transform.Translate(new Vector3(0, speed * Time.deltaTime, 0));
-        // }
     }
 }
