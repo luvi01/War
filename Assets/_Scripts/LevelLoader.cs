@@ -19,6 +19,7 @@ public class LevelLoader : MonoBehaviour
         {
             SceneManager.LoadScene("End");
             gm.playerBaseHealth = 10;
+            gm.playerMoney = 50;
         }
 
         if(gm.enemyBaseHealth <= 0)
